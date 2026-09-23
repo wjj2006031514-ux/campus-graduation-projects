@@ -3,10 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; url=activity/" />
-    <title>校园活动报名网站</title>
+    <title>校园毕业设计网站</title>
+    <link rel="stylesheet" href="shared/styles.css" />
   </head>
-  <body>
-    <p><a href="activity/">进入校园活动报名网站</a></p>
+  <body class="landing-body">
+    <main class="landing-page">
+      <h1>校园毕业设计网站</h1>
+      <p>三个网站采用不同模板、颜色和卡片布局。</p>
+      <div class="project-links">
+        <a class="project-link book-link" href="book/">
+          <i data-lucide="book-open"></i>
+          <h2>校园图书分享网站</h2>
+          <p>绿色阅读风格，横向图书卡片，包含借阅申请和后台审核。</p>
+        </a>
+        <a class="project-link activity-link" href="activity/">
+          <i data-lucide="calendar-check"></i>
+          <h2>校园活动报名网站</h2>
+          <p>橙色活动风格，突出报名状态、剩余名额和在线报名。</p>
+        </a>
+        <a class="project-link repair-link" href="repair/">
+          <i data-lucide="wrench"></i>
+          <h2>校园宿舍报修网站</h2>
+          <p>深色工单风格，包含派单、维修进度和完成确认。</p>
+        </a>
+      </div>
+    </main>
+    <script src="shared/lucide.min.js"></script>
+    <script>lucide.createIcons();</script>
   </body>
 </html>

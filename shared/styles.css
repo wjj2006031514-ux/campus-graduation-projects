@@ -873,3 +873,193 @@ th {
     justify-content: flex-start;
   }
 }
+
+/* Website-specific visual templates */
+body[data-site="book"] {
+  --blue: #327657;
+  --blue-dark: #245a42;
+  --green: #69834a;
+  background: #eef3eb;
+  font-family: "KaiTi", "Microsoft YaHei", serif;
+}
+
+body[data-site="book"] .site-header {
+  border-top: 5px solid #327657;
+  background: #f9fbf5;
+}
+
+body[data-site="book"] .nav-row {
+  justify-content: center;
+}
+
+body[data-site="book"] .page-banner {
+  color: var(--ink);
+  background: #f5f8f0;
+  border-left: 8px solid #327657;
+  box-shadow: 0 8px 22px rgba(47, 91, 64, 0.08);
+}
+
+body[data-site="book"] .page-banner p {
+  color: #607063;
+}
+
+body[data-site="book"] .banner-panel {
+  border: 1px solid #ccd9c8;
+  box-shadow: none;
+}
+
+body[data-site="book"] .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body[data-site="book"] .data-card {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+body[data-site="book"] .data-card-media {
+  min-height: 168px;
+  aspect-ratio: auto;
+}
+
+body[data-site="book"] .data-card-body {
+  padding: 15px;
+}
+
+body[data-site="activity"] {
+  --blue: #d9692f;
+  --blue-dark: #b95224;
+  --green: #2e7771;
+  --orange: #dc8d24;
+  background: #fff7ed;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+body[data-site="activity"] .site-header {
+  border-top: 5px solid #e8a238;
+  background: #fffaf2;
+}
+
+body[data-site="activity"] .nav-row button.active::after {
+  background: #d9692f;
+}
+
+body[data-site="activity"] .page-banner {
+  background: linear-gradient(120deg, #efa13b, #e76532);
+}
+
+body[data-site="activity"] .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body[data-site="activity"] .data-card {
+  border-top: 5px solid #e6a03d;
+  box-shadow: 0 8px 22px rgba(191, 112, 35, 0.08);
+}
+
+body[data-site="activity"] .data-card-media {
+  aspect-ratio: 5 / 3;
+}
+
+body[data-site="repair"] {
+  --blue: #315d7a;
+  --blue-dark: #24495f;
+  --green: #4b7d66;
+  background: #e7edf1;
+  font-family: "DengXian", "Microsoft YaHei", sans-serif;
+}
+
+body[data-site="repair"] .site-header {
+  color: #eef5fa;
+  background: #1f3446;
+  border-top: 5px solid #d46a2c;
+}
+
+body[data-site="repair"] .brand,
+body[data-site="repair"] .nav-row button {
+  color: #eef5fa;
+}
+
+body[data-site="repair"] .brand small {
+  color: #b9ccd9;
+}
+
+body[data-site="repair"] .brand-mark {
+  color: #fff;
+  background: #d46a2c;
+}
+
+body[data-site="repair"] .global-search {
+  border-color: #557185;
+  background: #dfe8ee;
+}
+
+body[data-site="repair"] .page-banner {
+  background: #263d51;
+  border-left: 8px solid #d46a2c;
+}
+
+body[data-site="repair"] .card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body[data-site="repair"] .data-card {
+  display: grid;
+  grid-template-columns: 36% 64%;
+  border-left: 5px solid #d46a2c;
+}
+
+body[data-site="repair"] .data-card-media {
+  min-height: 168px;
+  aspect-ratio: auto;
+}
+
+.project-link.book-link {
+  border-top: 5px solid #327657;
+}
+
+.project-link.activity-link {
+  border-top: 5px solid #e8a238;
+  background: #fffaf2;
+}
+
+.project-link.repair-link {
+  color: #eef5fa;
+  border-top: 5px solid #d46a2c;
+  background: #1f3446;
+}
+
+.project-link.repair-link p {
+  color: #bcd0dd;
+}
+
+.project-link.repair-link svg {
+  color: #f0a070;
+}
+
+@media (max-width: 900px) {
+  body[data-site="book"] .card-grid,
+  body[data-site="activity"] .card-grid,
+  body[data-site="repair"] .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  body[data-site="book"] .data-card,
+  body[data-site="repair"] .data-card {
+    display: block;
+  }
+
+  body[data-site="book"] .data-card-media,
+  body[data-site="repair"] .data-card-media {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  body[data-site="book"] .card-grid,
+  body[data-site="activity"] .card-grid,
+  body[data-site="repair"] .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

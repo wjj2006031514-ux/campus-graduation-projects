@@ -213,6 +213,8 @@ function renderProfile() {
 }
 
 function render(route) {
+  document.querySelector(".brand-mark").innerHTML = '<i data-lucide="calendar-check"></i>';
+  document.querySelector("#globalSearchInput").placeholder = "搜索活动名称、主办方或地点";
   document.querySelector("#appName").textContent = "校园活动报名";
   document.querySelector("#appSubtitle").textContent = "活动发布与在线报名";
   document.querySelector("[data-label='home']").textContent = "首页";
