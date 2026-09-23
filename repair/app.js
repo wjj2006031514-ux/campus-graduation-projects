@@ -558,7 +558,7 @@ function render(route) {
   document.querySelector(".brand-mark").innerHTML = '<i data-lucide="wrench"></i>';
   document.querySelector("#globalSearchInput").placeholder = "搜索楼栋、房间或故障类型";
   const user = C.currentUser();
-  document.querySelector("#appName").textContent = "校园宿舍报修";
+  document.querySelector("#appName").textContent = "陈雪蒙 · 校园宿舍报修";
   document.querySelector("#appSubtitle").textContent = "故障提交与维修进度";
   document.querySelector("[data-label='home']").textContent = "首页";
   document.querySelector("[data-label='list']").textContent = "报修记录";

@@ -562,7 +562,7 @@ function render(route) {
   document.querySelector(".brand-mark").innerHTML = '<i data-lucide="book-open"></i>';
   document.querySelector("#globalSearchInput").placeholder = "搜索书名、作者或地点";
   const user = C.currentUser();
-  document.querySelector("#appName").textContent = "校园图书分享";
+  document.querySelector("#appName").textContent = "冯慧茹 · 校园图书分享";
   document.querySelector("#appSubtitle").textContent = "图书借阅与共享";
   document.querySelector("[data-label='home']").textContent = "首页";
   document.querySelector("[data-label='list']").textContent = "全部图书";
